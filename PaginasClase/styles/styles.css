@@ -1,39 +1,42 @@
 /* Selectores */
 body {
-	margin: 50px;
-	border-color: black;
-	border-style: solid;
-	border-width: 2px;
-	padding: 20px;
+  margin: 50px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
-	color: purple;
-	background: yellow;
-	text-align: left;
-	font-family: "Roboto", serif;
-  	font-optical-sizing: auto;
- 	font-weight: 300;
-  	font-style: normal;
-  	font-variation-settings:
-    "wdth" 75;
+  color: purple;
+  background: yellow;
+  text-align: left;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 75;
 }
 
 p {
-	color: darkgreen;
-	font-size: 18px;
+  color: darkgreen;
+  font-size: 18px;
 }
 
-.img-main{
-	display: flex;
-	justify-self: center;
-
+.img-main {
+  display: flex;
+  justify-self: center;
 }
 
 img {
-	width: 200;	
-	border-width: 5px;
-	border-style: inset;
-	border-color: #02BDCA;
-	border-radius: 50%;
+  width: 200;
+  border-width: 5px;
+  border-style: inset;
+  border-color: #02bdca;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
 }
