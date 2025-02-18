@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head> </head>
+  <head>
+	  <link rel="stylesheet" href="styles/estilosPostres.css" type="text/css">
+  </head>
   <body>
+	  <div class="imagen-div">
+		  <img src="img/flan.jpg">
+	  </div>
     <h1>Recetas de Postres</h1>
-    <h2 id="menu">Menú de Recetas de Postres</h2>
+    <div class="intro">
     <p>
       Bienvenido a nuestra página de recetas de postres. Aquí encontrarás
       deliciosas recetas fáciles de preparar para endulzar tu día. Explora
       nuestras opciones y disfruta de la magia de la repostería.
     </p>
-    <ul>
+    </div>
+    <ul id="main-nav" class="nav">
       <li><a href="#manzana">Postre de Manzana</a></li>
       <li><a href="#chocolate">Pastel de Chocolate</a></li>
       <li><a href="#fresas">Tarta de Fresas</a></li>
     </ul>
+
+	<!-- DIV POSTRE DE MANZANA -->
+
+    <div id="manzana-card">
     <h3 id="manzana">Postre de Manzana</h3>
     <p>
       El postre de manzana es una opción clásica y deliciosa, ideal para
@@ -39,7 +49,15 @@
       <li>Hornear a 180°C durante 25-30 minutos.</li>
       <li>Servir caliente y disfrutar.</li>
     </ol>
-    <p><a href="#menu">Regresat al Menu</a></p>
+    </div>
+
+
+    <p><a href="#main-nav">Regresar al Menu</a></p>
+
+    <!-- DIV POSTRE DE CHOCOLATE -->
+
+
+    <div class="choco-card">
     <h3 id="chocolate">Pastel de Chocolate</h3>
     <p>
       El pastel de chocolate es un postre irresistible para los amantes del
@@ -61,7 +79,11 @@
       <li>Verter la mezcla en un molde y hornear a 180°C por 30 minutos.</li>
       <li>Dejar enfriar y servir.</li>
     </ol>
-    <p><a href="#menu">Regresat al Menu</a></p>
+    </div>
+    <p><a href="#main-nav">Regresar al Menu</a></p>
+
+	<!-- POSTRE DIV DE FRESAS -->
+    <div class="fresa-card">
     <h3 id="fresas">Tarta de Fresas</h3>
     <p>
       La tarta de fresas es un postre fresco y ligero, perfecto para los días
@@ -86,6 +108,7 @@
       </li>
       <li>Refrigerar por 2 horas antes de servir.</li>
     </ol>
-    <p><a href="#menu">Regresat al Menu</a></p>
+    </div>
+    <p><a href="#main-nav">Regresar al Menu</a></p>
   </body>
 </html>
