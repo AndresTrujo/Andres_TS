@@ -103,10 +103,34 @@ function crearTabla() {
     cadena = cadena + "<td>" + usuario.comentario + "</td>";
     cadena = cadena + "</tr>";
   }
-
   cadena = cadena + "</tbody>";
   cadena = cadena + "</table>";
   tabla.innerHTML = cadena;
+}
+
+function agregarFila() {
+  const id = document.getElementById("id").value;
+  const nombre = document.getElementById("nombre").value;
+  const apellido = document.getElementById("apellido").value;
+  const correo = document.getElementById("correo").value;
+  const telefono = document.getElementById("telefono").value;
+  const comentario = document.getElementById("comentario").value;
+
+  if (id && nombre && apellido && correo && telefono && comentario) {
+    let contenedor = tabla.getElementsByTagName('tbody')[0];
+    const nuevaFila = contenedor.insertRow();
+    nuevaFila.innerHTML = `
+        <td>${id}</td>
+        <td>${nombre}</td>
+        <td>${apellido}</td>
+        <td>${correo}</td>
+        <td>${telefono}</td>
+        <td>${comentario}</td>
+    `;
+    document.getElementById("formulario").reset();
+  } else {
+    alert("Los datos no están completos.");
+  }
 }
 
 crearTabla();

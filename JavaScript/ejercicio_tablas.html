@@ -8,9 +8,23 @@
   </head>
   <body>
     <h1>Tabla de Datos</h1>
-    <div class="tabla">
-
-    </div>
+    <div id="tabla"></div>
+    <h2>Agregar nueva fila.</h2>
+    <form id="formulario">
+      <label for="id">ID:</label>
+      <input type="text" id="id" placeholder="Id" required />
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" placeholder="Apellido" required />
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" placeholder="Correo" required />
+      <label for="telefono">Telefono:</label>
+      <input type="tel" id="telefono" placeholder="Telefono" required />
+      <label for="telefono">Comentario:</label>
+      <input type="text" id="comentario" placeholder="Comentario" required />
+      <button type="submit" onclick="agregarFila()">Agregar</button>
+    </form>
     <!-- Link a JS -->
     <script src="ejercicio_tablas.js" type="text/javascript"></script>
   </body>
