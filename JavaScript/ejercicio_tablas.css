@@ -1,18 +1,76 @@
 table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #268141;
 }
 
-tr:nth-child(even){
-    background-color: #f9f9f9;
+tr:nth-child(even) {
+  background-color: #dbe7dd;
+}
+
+tr:nth-child(odd) {
+  background-color: #99c8a1;
+}
+
+/* .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario input, label {
+    width: 50%;
+    padding: 20px;
+}
+ */
+
+form.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form.formulario label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form.formulario input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form.formulario button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form.formulario button:hover {
+  background-color: #0056b3;
 }
