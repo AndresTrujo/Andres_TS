@@ -6,4 +6,10 @@ function sayHelloWorld(){
     return '¡Hola Mundo!';
 }
 
-console.log(sayHello('Trujo'));
+/* module.exports.sayHello = sayHello;
+module.exports.sayHolaMundo = sayHelloWorld; */
+
+module.exports = {
+    sayHello : sayHello,
+    sayHelloWorld : sayHelloWorld,
+}
